@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+       <div class="container">
+      <div id="fristbox">     
+<div id="secondbox">
+
+       <input  id="input1">
+</div>
+              
+     <div id="thirdbox">
+       <button onclick="number('1')" id="b1">1</button>
+       <button onclick="number('2')" id="b2">2</button>
+       <button onclick="number('3')" id="b2">3</button>
+       <button onclick="number('4')" id="b2">4</button>
+       <button onclick="number('5')" id="b2">5</button>
+       <button onclick="number('6')" id="b2">6</button>
+       <button onclick="number('7')" id="b2">7</button>
+        <button onclick="number('8')" id="b2">8</button>
+        <button onclick="number('9')" id="b2">9</button>
+        <button onclick="number('0')" id="b2">0</button>
+        <button onclick="number('%')" id="b2">%</button> 
+        <button onclick="number('/')" id="b2">/</button> 
+        <button onclick="number('*')" id="b2">*</button> 
+        <button onclick="number('-')" id="b2">-</button> 
+        <button onclick="number('+')" id="b2">+</button>
+        <button onclick="result()" id="b3">=</button>
+        <button onclick="clere()" id="b11">del</button>
+        <button onclick="delet()" id="b12">CC</button>
+      </div>
+      </div>
+       </div>
+       <script >
+//  let  output =  document.getElementById('input1')
+ let output = document.getElementById('input1')
+   function number(num){
+    output.value +=num
+  }
+
+function clere(){
+
+       output.value= output.value.slice(0,-1)
+}
+  function delet(){
+       output.value = ' '
+
+  }
+function result(){
+
+output.value = 
+eval(output.value);
+
+}
+  
+
+       </script>
+</body>
+</html>
